@@ -34,7 +34,7 @@ So now there is a ETCD or a cluster of ETCD Docker containers running.
 Under directory **dist**, run the following two command lines in two separate terminal tabs in a termial (**iTerm** highly recommended) 
 ```shell
 sudo ./proxy --addr=127.0.0.1:80 --addr-rpc=127.0.0.1:9091 --addr-store=etcd://127.0.0.1:2379 --namespace=test
-./apiserver --addr=127.0.0.1:9091 --addr-store=etcd://127.0.0.1:2379 --discovery --namespace=test -ui=ui/dist
+./apiserver --addr=127.0.0.1:9091 --addr-store=etcd://127.0.0.1:2379 --discovery --namespace=test -ui=dist/ui/dist
 ```
 to start proxy and apiserver.
 
